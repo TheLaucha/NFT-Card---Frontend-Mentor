@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://your-solution-url.com)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/nft-card-using-html-and-css-tpjW13yl-)
 - Live Site URL: [Link](https://thelaucha.github.io/NFT-Card---Frontend-Mentor/)
 
 ## My process
