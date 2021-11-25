@@ -1,0 +1,157 @@
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --veryDarkBlue-Bg: hsl(217, 54%, 11%);
+  --veryDarkBlue-cardBg: hsl(216, 50%, 16%);
+  --veryDarkBlue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--veryDarkBlue-Bg);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--veryDarkBlue-cardBg);
+  padding: 20px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 30px 50px hsl(212, 74%, 12%);
+}
+
+.card-container .image,
+.card-container h4,
+.card-container p,
+.card-container .data,
+hr {
+  margin-bottom: 1rem;
+}
+
+.card-container .image {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card-container .image img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-container .image .eye-image-box {
+  border-radius: 10px;
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-color: hsl(178, 50%, 50%);
+}
+
+.card-container .image #eye-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+}
+
+.card-container .image img:hover {
+  mix-blend-mode: overlay;
+}
+
+.card-container h4 {
+  font-weight: 600;
+  color: var(--white);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.card-container h4:hover {
+  color: var(--cyan);
+}
+
+.card-container p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--softBlue);
+}
+
+.card-container .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eth-amount-box,
+.days-box,
+.user-box {
+  display: flex;
+  align-items: center;
+}
+
+.eth-amount-box #eth-icon {
+  width: 0.7rem;
+}
+
+.eth-amount-box #eth-amount,
+.days-box #days-left {
+  margin-left: 0.3rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--cyan);
+}
+
+.days-box #clock-icon {
+  width: 1.1rem;
+}
+
+.days-box #days-left {
+  color: var(--softBlue);
+}
+
+hr {
+  color: var(--softBlue);
+  border-color: var(--softBlue);
+  background-color: var(--softBlue);
+}
+
+.user-box img {
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.user-box span {
+  font-size: 0.9rem;
+  color: var(--softBlue);
+}
+
+.user-box span#creator {
+  color: var(--white);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.user-box span#creator:hover {
+  color: var(--cyan);
+}
